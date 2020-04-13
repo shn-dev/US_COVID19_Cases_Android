@@ -1,14 +1,14 @@
 # COVID-19 Cases and Deaths by US City
-Provides daily updates of the number of US COVID-19 Cases for use in Android applications.
+Provides daily updates of the number of US COVID-19 cases and deaths for use in Android applications.
 
 ## Description
-This repository contains an Android library that asynchronously connects to the Johns Hopkins US COVID-19 cases dataset located on GitHub. A function is exposed after the data is retrieved that allows UI updates or the data to be manipulated internally as desired.
+This repository contains an Android library that asynchronously connects to the Johns Hopkins US COVID-19 cases and deaths datasets located on GitHub. A function is exposed after the data is retrieved that allows UI updates for the data to be manipulated internally as desired.
 
 ## Source
-The dataset is available at https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv and is updated daily.
+The dataset is available at https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv and is updated daily. The dataset for deaths is in the same directory.
 
 ## Usage
-The code below shows an example of how to incorporate the dataset into your Android (SDK 18+) application. In summary, it is assumed you have a simple `Activity` with a button on its respective layout. Upon clicking the button, you execute the code that pulls the dataset. Once the code returns you are able to use the data without having to worry about conflicts with the main UI thread. You must also provide code in `onNetworkError` and `onParsingError` should the code execution fail somehow. 
+The code below shows an example of how to incorporate the dataset into your Android (SDK 18+) application. In summary, it is assumed you have a simple `Activity` with a button on its respective layout. Upon clicking the button, you execute the code that pulls the datasets. Once the code returns you are able to use the data without having to worry about conflicts with the main UI thread. You must also provide code in `onNetworkError` and `onParsingError` should the code execution fail somehow. 
 ```
 /***
  * A demo activity that has a single button in its layout.
