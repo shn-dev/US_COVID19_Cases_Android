@@ -1,4 +1,4 @@
-# US_COVID19_Cases_Android
+# USA COVID-19 Cases and Deaths by City
 Provides daily updates of the number of US COVID-19 Cases for use in Android applications.
 
 ## Description
